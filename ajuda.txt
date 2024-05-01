@@ -1,0 +1,9 @@
+- Display flex vs. display grid
+- Text overflow
+- Transições e animações (@keyframes)
+- Pseudo-classes (hover, nth-child, nth-of-type, etc.)
+- Pseudo-elementos (before, marker, first-letter, etc.)
+- Media queries e responsividade
+- Sass (pre-processador de CSS)
+ 
+Exemplo de Roadmap: https://pingback.com/gabcodes/css-roadmap-guia-para-estudo-de-css

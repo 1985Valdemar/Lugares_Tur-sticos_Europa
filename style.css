@@ -1,0 +1,112 @@
+/* Define a fonte padrão para todo o documento */
+* {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza o cabeçalho */
+header {
+  background-color: lightgray;
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo do cabeçalho à direita */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 16px;
+}
+
+/* Estiliza a navegação */
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 16px;
+}
+
+/* Estiliza a seção principal do conteúdo */
+main {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adiciona sombra ao texto */
+  padding-top: 32px;
+  width: 90vw; /* Define a largura da seção principal */
+  padding: 8px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Define diferentes estilos para diferentes larguras de tela */
+@media (min-width: 320px) and (max-width: 720px) {
+  main {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  main {
+    background-color: hotpink;
+  }
+}
+
+/* Estiliza as caixas dentro da seção principal */
+main section div {
+  background-color: rgb(145, 74, 48);
+  padding: 16px;
+  width: 90%; /* Define a largura da caixa */
+  border-radius: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estiliza as imagens dentro das caixas */
+main section div img {
+  margin-bottom: 25px; /* Adiciona espaço abaixo da imagem */
+  width: 100%; /* Define a largura da imagem como 100% da largura da caixa */
+}
+
+main section div img {
+  margin-bottom: 25px;
+  width: 100%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Estiliza a seção principal */
+main section {
+  display: flex;
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 16px; /* Adiciona espaço entre os elementos */
+  margin-top: 15px; /* Adiciona espaço acima da seção */
+}
+
+/* Estiliza o corpo da página */
+body {
+  background-color: #5ef887;
+}
+
+/* Estiliza os cabeçalhos */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px; /* Adiciona espaço abaixo dos cabeçalhos */
+}
+
+/* Estiliza os links */
+a {
+  text-decoration: none;
+}
