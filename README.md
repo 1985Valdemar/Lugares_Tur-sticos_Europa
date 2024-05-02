@@ -49,6 +49,7 @@ Esse projeto foi desenvolvindo com as seguintes tecnologias:
 
 - IDE VisualStudio Code
 - HTML
+- CSS
 - Git e Github.
 
 # Autores
