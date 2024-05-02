@@ -1,0 +1,120 @@
+/* Codigo Refatorado e restilizado */
+
+/* Define a fonte padrão e remove margens e preenchimentos */
+* {
+  font-family: 'Maven Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estiliza o cabeçalho */
+header {
+  background-color: rgb(213, 153, 132); /* Define a cor de fundo */
+  display: flex; /* Usa flexbox para organizar os itens */
+  justify-content: flex-end; /* Alinha o conteúdo à direita */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 16px; /* Adiciona espaço interno */
+}
+
+/* Estiliza a navegação */
+nav ul {
+  display: flex; /* Usa flexbox para organizar os itens */
+  list-style-type: none; /* Remove a marcação da lista */
+}
+
+nav ul li {
+  margin-left: 16px; /* Adiciona espaçamento entre os itens */
+}
+
+/* Estiliza a seção principal do conteúdo */
+main {
+  color: rgb(255, 255, 255); /* Define a cor do texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adiciona sombra ao texto */
+  padding-top: 32px; /* Adiciona espaço superior */
+  width: 90vw; /* Define a largura da seção em 90% da largura da janela de visualização */
+  padding: 8px; /* Adiciona espaço interno */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Define diferentes estilos para diferentes larguras de tela */
+@media (min-width: 320px) and (max-width: 720px) {
+  main {
+    background-color: blue; /* Altera a cor de fundo para telas pequenas */
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1080px) {
+  main {
+    background-color: hotpink; /* Altera a cor de fundo para telas médias */
+  }
+}
+
+/* Estiliza as caixas dentro da seção principal */
+main section div {
+  background-color: rgb(213, 153, 132); /* Define a cor de fundo */
+  padding: 16px; /* Adiciona espaço interno */
+  width: 90%; /* Define a largura da caixa em 90% da largura da seção */
+  border-radius: 25px; /* Adiciona cantos arredondados */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: column; /* Centraliza verticalmente (erro: deve ser "center" ao invés de "column") */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estiliza as imagens dentro das caixas */
+main section div img {
+  margin-bottom: 25px; /* Adiciona espaço abaixo da imagem */
+  width: 100%; /* Define a largura da imagem */
+  margin-top: 100px; /* Adiciona espaço acima da imagem */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Estiliza a seção principal */
+main section {
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-direction: row; /* Organiza o conteúdo em linha */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 16px; /* Adiciona espaço entre os elementos */
+  margin-top: 15px; /* Adiciona espaço acima da seção */
+}
+
+/* Estiliza o corpo da página */
+body {
+  background-color: #7be7eb; /* Define a cor de fundo do corpo */
+  display: flex; /* Usa flexbox para organizar os itens */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  min-height: 100vh; /* Faz com que o corpo ocupe pelo menos toda a altura da janela de visualização */
+}
+
+/* Estiliza os cabeçalhos */
+h1 {
+  font-size: 4rem; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+  font-size: 1.5rem; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+}
+
+h3 {
+  font-size: 1.2rem; /* Define o tamanho da fonte */
+  margin-bottom: 5px; /* Adiciona espaço abaixo dos cabeçalhos */
+}
+
+/* Estiliza os links */
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: rgb(213, 153, 132); /* Define a cor de fundo */
+  color: white; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 20px; /* Adiciona espaço interno */
+  margin-top: auto; /* Faz com que o rodapé seja empurrado para o final da página */
+}
